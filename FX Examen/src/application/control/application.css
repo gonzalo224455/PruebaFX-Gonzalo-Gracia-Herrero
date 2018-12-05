@@ -1,0 +1,16 @@
+.mybutton{
+	-fx-background-color:  #fea200;
+
+	-fx-text-fill: white;
+	-fx-border-radius: 5px;
+}
+.mybutton:hover{
+	-fx-background-color:  #008081;
+	}
+
+.Titulo{
+	-fx-font-family: "Poiret One";
+	
+}
+
+

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane minHeight="300.0" minWidth="250.0" prefHeight="450.0" prefWidth="250.0" stylesheets="@../control/application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.view.ControlFX">
+   <children>
+      <BorderPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <bottom>
+            <AnchorPane prefHeight="27.0" prefWidth="500.0" style="-fx-background-color: #008081;" BorderPane.alignment="CENTER" />
+         </bottom>
+         <top>
+            <AnchorPane prefHeight="87.0" prefWidth="346.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="87.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../application.view.assets/blueforest.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="79.0" fitWidth="86.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../application.view.assets/profilephoto.png" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+         </top>
+         <center>
+            <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <children>
+                  <JFXTextField focusColor="#fea200" labelFloat="true" promptText="Nombre" unFocusColor="#008081">
+                     <VBox.margin>
+                        <Insets bottom="12.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField focusColor="#fea200" labelFloat="true" layoutX="10.0" layoutY="10.0" promptText="Apellidos" unFocusColor="#008081">
+                     <VBox.margin>
+                        <Insets bottom="12.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField focusColor="#fea200" labelFloat="true" layoutX="10.0" layoutY="10.0" promptText="Correo" unFocusColor="#008081">
+                     <VBox.margin>
+                        <Insets bottom="12.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField focusColor="#fea200" labelFloat="true" layoutX="10.0" layoutY="84.0" promptText="Calle" unFocusColor="#008081">
+                     <VBox.margin>
+                        <Insets bottom="12.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField focusColor="#fea200" labelFloat="true" layoutX="10.0" layoutY="121.0" promptText="Codigo Postal" unFocusColor="#008081">
+                     <VBox.margin>
+                        <Insets bottom="12.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXToggleButton prefHeight="58.0" prefWidth="156.0" text="Mayor de edad" toggleColor="#fea200" toggleLineColor="#fea200" unToggleColor="#008081" unToggleLineColor="#003333">
+                     <VBox.margin>
+                        <Insets right="90.0" />
+                     </VBox.margin>
+                  </JFXToggleButton>
+                  <JFXButton onMouseClicked="#Close" prefWidth="69.0" styleClass="mybutton" text="Close">
+                     <VBox.margin>
+                        <Insets left="150.0" top="35.0" />
+                     </VBox.margin>
+                  </JFXButton>
+               </children>
+               <BorderPane.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </BorderPane.margin>
+            </VBox>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
